@@ -84,4 +84,4 @@ while(TRUE){
   
   iteration <- iteration+1
   plot(x, y, xlab = "PC1", ylab = "PC2", col = ifelse(c1>c2, "red", "blue"))
-}
+  }
