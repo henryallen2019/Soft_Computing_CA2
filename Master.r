@@ -169,7 +169,6 @@ print(res)
 
 ## Equivalence ##
 
-
 is_reflexive <<- function(mat){
   for(i in 1:length(mat)){
     if(mat[[i]][[i]] != 1)
@@ -199,7 +198,6 @@ do_lambdacut <<- function(mat, lambda){
   }
   return(mat)
 }
-
 
 is_transitive <<- function(mat){
   for(i in 1:(length(mat))){
@@ -239,20 +237,16 @@ get_class <<- function(mat){
   }
   return(final_list)
 }
-
-
 # mat = list(c(1,0.8,0,0.1,0.2),
 #            c(0.8,1,0.4,0,0.9),
 #            c(0,0.4,1,0,0),
 #            c(0.1,0,0,1,0.5),
 #            c(0.2,0.9,0,0.5,1))
-
 mat = list(c(1,0.836,0.913,0.683,0.981),
            c(0.836,1,0.934,0.390,0.745),
            c(0.913,0.934,1,0.44,0.818),
            c(0.683,0.390,0.44,1,0.754),
            c(0.981,0.745,0.818,0.754,1))
-
 # mat = list(c(0.3,0.4),
 #            c(0.4,0.3))
 
@@ -276,4 +270,3 @@ print(mat)
 mat = do_lambdacut(mat, 0.80)
 print(mat)
 print(get_class(mat))
-
